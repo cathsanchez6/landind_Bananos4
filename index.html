@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario Del Monte</title>
+
+  <style>
+    /* Estilos internos */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .contenedor-principal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+      z-index: 10;
+    }
+
+    .logo img {
+      width: 100px;
+      height: auto;
+    }
+
+    .contenedor-marco {
+      background-color: white;
+      /*border: 5px solid light gray;*/
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .formulario h2 {
+      color: #007837;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #333;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .campo {
+      background-color: #eeeeee;
+      padding: 12px 15px;
+      border-radius: 10px;
+      color: #555;
+      margin-top: 5px;
+      font-style: italic;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .fondo-decorativo {
+      width: 100%;
+      margin-top: 0px; /* sube un poco para que pegue */
+      z-index: 5;
+    }
+
+    .fondo-decorativo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-height: 100px; /* controlamos que no sea tan alta */
+      object-fit: scale-down;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .contenedor-marco {
+        padding: 20px;
+      }
+      .formulario h2 {
+        font-size: 20px;
+      }
+      label, .campo {
+        font-size: 13px;
+      }
+      .logo img {
+        width: 80px;
+      }
+     .fondo-decorativo img {
+        max-height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="contenedor-principal">
+
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo Del Monte"><br><br>
+    </div>
+
+    <div class="contenedor-marco">
+      <div class="formulario">
+        <h2>Información</h2>
+
+        <label><b>Certified Organic by / Certifiè Biologique par:</b></label>
+        <div class="campo"><b>Control Union Certification</b></div>
+        <label><b>Country of Origin / Pays D'origine:</b></label>
+        <div class="campo"><b>Product Of Ecuador - Produit De L'Èquateur</b></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="fondo-decorativo">
+    <img src="assets/banner-del-monte.png" alt="Banner decorativo">
+  </div>
+
+</body>
+</html>
